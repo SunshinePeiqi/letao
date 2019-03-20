@@ -1,0 +1,126 @@
+html,body {
+    height: 100%;
+}
+ul, ol {
+    list-style: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:hover,
+a:visited,
+a:active,
+a:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.lt-aside {
+    width: 180px;
+    height: 100%;
+    background-color: #222D32;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    transition: all 1s;
+}
+.lt-aside.now{
+    left: -180px;
+}
+
+.lt-aside .brand {
+    height: 50px;
+    width: 180px;
+    background-color: #367FA9;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;    
+}
+
+.lt-aside .user {
+    padding-top: 30px;
+}
+.lt-aside .user img{
+    width: 80px;
+    height: 80px;
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.lt-aside .user p {
+    padding-top: 10px;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+}
+
+.lt-aside .nav ul li span {
+    color: #fff;
+}
+.lt-aside .nav {
+    padding-top: 20px;
+}
+.lt-aside .nav ul li {
+    /* padding-top: 20px; */
+    padding-left: 40px;
+    border-left: 3px solid transparent;
+    
+}
+.lt-aside .nav ul li.current {
+    border-left: 3px solid blue;
+    background-color: #1D1F21;
+}
+.lt-aside .nav ul li a {
+    height: 40px;
+    line-height: 40px;
+
+}
+.lt-aside .nav ul li .son {
+    padding-left: 20px;
+}
+.lt-aside .nav ul li .son a {
+    height: 30px;
+    line-height: 30px;
+}
+
+
+/* 主体部分 */
+.lt-main {
+    height: 100%;
+    width: 100%;
+    /* background-color: pink; */
+    padding-left: 190px;
+    top: 100px;
+    padding-top: 70px;
+    transition: all 1s;
+}
+.lt-main.now {
+    padding-left: 0;
+}
+
+.lt-main .top {
+    height: 50px;
+    width: 100%;
+    background-color: #3C8DBC;
+    padding-left: 190px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 998;
+    padding-top: 15px;
+    transition: all 1s;
+}
+.lt-main .top.now{
+    padding-left: 10px;
+}
+.lt-main .top a{
+    height: 50px;
+    line-break: 50px;
+}
+.lt-main ol li a {
+    color: #337ab7;
+}

@@ -1,47 +1,6 @@
-html, body{
-    height: 100%;
-}
-* {
-    margin: 0;
-    padding: 0;
-}
-
-/* 侧边栏样式 */
-.aside-left {
-    width: 180px;
-    height: 100%;
-    background-color: #222d32;
-    padding-top: 80px;
-    text-align: center;
-    position: fixed;
-    left: 0;
-    top: 0;
-}
-.pc-img {
-    height: 80px;
-    width: 80px;
-    margin: 0 auto;
-    background-color: #fff;
-    border-radius: 50%;
-    overflow: hidden;
-}
-.pc-img img {
-    width: 80px;
-}
-.aside-left h3 {
-    color: #fff;
-    font-weight: 400;
-    padding-top: 10px;
-}
-
-/* 头部样式 */
-.top {
-    height: 50px;
-    width: 100%;
-    background-color: #3C8DBC;
-    z-index: 999;
-    position: fixed;
-    left: 0;
-    top: 0;
-    opacity: .9;
+.lt-main .box .in-left {
+    /* background-color: pink; */
+    height: 400px;
+    /* margin-right: 10px; */
+    /* width: 400px; */
 }
