@@ -32,11 +32,6 @@ $(function () {
         })
     })
 
-  
-
-
-
-
 })
 
   // 封装分页
@@ -51,7 +46,7 @@ $(function () {
             render(page);
         },
         itemTexts: function (type, page, current) {
-            console.log(type, page, current)
+            // console.log(type, page, current)
             switch (type) {
                 case 'first':
                     return "首页"
