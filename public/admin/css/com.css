@@ -124,3 +124,9 @@ a:link {
 .lt-main ol li a {
     color: #337ab7;
 }
+
+.table.table-bordered th,
+.table.table-bordered td {
+    text-align: center;
+    vertical-align: middle;
+}

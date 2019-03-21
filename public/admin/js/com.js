@@ -44,10 +44,26 @@ $(function () {
     $('#pagintor').bootstrapPaginator({
         bootstrapMajorVersion: 3,
         currentPage: res.page,
+        size: 'small',
         totalPages: Math.ceil(res.total / res.size),
         // 点击切换页数
         onPageClicked: function (event, originalEvent, type, page) {
             render(page);
+        },
+        itemTexts: function (type, page, current) {
+            console.log(type, page, current)
+            switch (type) {
+                case 'first':
+                    return "首页"
+                case 'prev':
+                    return "上一页"
+                case 'next':
+                    return "下一页"
+                case 'last':
+                    return "尾页"            
+                default:
+                    return page;
+            }
         }
     })
 }
