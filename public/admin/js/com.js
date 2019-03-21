@@ -32,7 +32,22 @@ $(function () {
         })
     })
 
+  
+
 
 
 
 })
+
+  // 封装分页
+  function renderPagintor(res, render) {
+    $('#pagintor').bootstrapPaginator({
+        bootstrapMajorVersion: 3,
+        currentPage: res.page,
+        totalPages: Math.ceil(res.total / res.size),
+        // 点击切换页数
+        onPageClicked: function (event, originalEvent, type, page) {
+            render(page);
+        }
+    })
+}
