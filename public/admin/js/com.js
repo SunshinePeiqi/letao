@@ -32,6 +32,17 @@ $(function () {
         })
     })
 
+    // ajax请求全局事件  显示进度条
+    $(document).ajaxStart(function () {
+        // 开始发送请求
+        NProgress.start();
+    });
+
+    $(document).ajaxStop(function () {
+        // 结束发送请求
+        NProgress.done();
+    })
+
 })
 
   // 封装分页
